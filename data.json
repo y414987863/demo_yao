@@ -1,0 +1,33 @@
+{
+    "goodsSpecJSON": "[{\"SpecA\":\"颜色\"},{\"SpecB\":\"容量\"},{\"SpecC\":\"大小\"},{\"SpecD\":\"等级\"},{\"SpecE\":\"寿命\"}]",
+    "goodsSpecList": [
+        {
+            "SpecA": "红",
+            "SpecB": "3000m",
+            "SpecC": 20,
+            "SpecD": "A",
+            "SpecE": 32
+        },
+        {
+            "SpecA": "绿",
+            "SpecB": "4000m",
+            "SpecC": 22,
+            "SpecD": "B",
+            "SpecE": 33
+        },
+        {
+            "SpecA": "蓝",
+            "SpecB": "5000m",
+            "SpecC": 26,
+            "SpecD": "C",
+            "SpecE": 34
+        },
+        {
+            "SpecA": "黄",
+            "SpecB": "6000m",
+            "SpecC": 23,
+            "SpecD": "D",
+            "SpecE": 35
+        }
+    ]
+}
