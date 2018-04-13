@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+        #demo span {
+            display: inline-block;
+            width: 60px;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="demo">
+    </div>
+    <script>
+        $.getJSON('./data.json', function (res) {
+            console.log(res)
+            var goodsSpecJSON = JSON.parse(res.goodsSpecJSON);
+            var goodsSpecList = res.goodsSpecList;
+            var txt = '';
+            goodsSpecJSON.forEach(function (keyo, i) {
+                var key = Object.keys(keyo)[0];
+                txt += `<p>${keyo[key]}`;
+                goodsSpecList.forEach(function (item, j) {
+                    txt += `<span>${item[key]}</span>`;
+                });
+                txt += '</p>\n'
+            });
+            $('#demo').html(txt);
+        });
+    </script>
+</body>
+
+</html>
